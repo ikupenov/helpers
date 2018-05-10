@@ -1,7 +1,6 @@
 CREATE TABLE #SearchStrings (StringToSearch nvarchar(255))
 INSERT INTO #SearchStrings SELECT '%Search Text%'
 
-
 CREATE TABLE #Results (ColumnName nvarchar(370), ColumnValue nvarchar(3630))
 SET NOCOUNT ON
     DECLARE @TableName nvarchar(256), @ColumnName nvarchar(128), @SearchStr2 nvarchar(110)
