@@ -6,6 +6,6 @@ console.watchFn = function(obj, fn) {
 
     obj[fn] = function() {
         debugger;
-        $__fn__$.apply($__obj__$, arguments);
+        $__fn__$.apply(obj, arguments);
     }
 }
